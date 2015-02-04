@@ -3,12 +3,12 @@ package refactoring.lab.logica;
 public class Fecha {
 	private int dia;
 	private int mes;
-	private int anio;
+	private int año;
 
-	public Fecha(int dia, int mes, int anio) {
+	public Fecha(int dia, int mes, int año) {
 		this.dia = dia;
 		this.mes = mes;
-		this.anio = anio;
+		this.año = año;
 	}
 
 	public boolean valida() {
@@ -54,7 +54,7 @@ public class Fecha {
 	}
 
 	public boolean esBisiesto() {
-		if ((anio % 400 == 0) || ((anio % 4 == 0) && (anio % 100 != 0))) {
+		if ((año % 400 == 0) || ((año % 4 == 0) && (año % 100 != 0))) {
 			return true;
 		} else {
 			return false;
